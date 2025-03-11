@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <script src="code.js" defer></script>
+    <style>
+      body {
+        background-color: rgb(21, 75, 14);
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        font-size: 4em;
+        background-color: rgb(93, 165, 45);
+        color: yellow;
+        -webkit-text-stroke: 1.1px black;
+        font-weight: bold;
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        font-size: 1.5em;
+        background-color: rgb(93, 165, 45);
+        color: yellow;
+        -webkit-text-stroke: 1.1px black;
+        font-weight: bold;
+        margin-top: 5vh;
+      }
+      .but {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+        margin: 15vh auto;
+        margin-bottom: 0%;
+        width: fit-content;
+      }
+      .general {
+        height: 10vh;
+        width: 30vh;
+        border-radius: 20px;
+        font-size: 2em;
+        font-weight: bold;
+        background-color: yellow;
+      }
+      .add {
+        height: 20vh;
+        width: 50vh;
+        border-radius: 60px;
+        font-size: 3em;
+      }
+      .general:hover {
+        cursor: pointer;
+        background-color: rgb(108, 195, 211);
+        transform: scale(1.2);
+      }
+      .count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8vh auto;
+        margin-bottom: 0%;
+        height: 20vh;
+        width: 55vw;
+        border: 0.5em solid black;
+        border-radius: 20vw;
+        background-color: white;
+      }
+      .text {
+        font-size: 6em;
+        font-weight: bold;
+      }
+      .int {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0vh auto;
+        margin-bottom: 0%;
+        width: fit-content;
+      }
+      .intText {
+        background-color: white;
+        width: 8vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 3em;
+        border: 0.1em solid black;
+      }
+      .intSet {
+        width: 4vw;
+        height: 11vh;
+        border: 0.2em solid black;
+        font-size: 2em;
+        background-color: yellow;
+      }
+      .intSet:hover {
+        cursor: pointer;
+        background-color: rgb(108, 195, 211);
+        transform: scale(1.2);
+      }
+      .setIntText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 6vh auto;
+        margin-bottom: -8vh;
+        width: 16vw;
+        height: 5vh;
+        font-size: 2em;
+        font-weight: bold;
+        background-color: white;
+        border: 0.2em solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>Digital Tasbeeh</header>
+    <div class="but">
+      <button class="general" id="decrement" onclick="func('-')">-1</button>
+      <button class="add general" id="increment" onclick="func('+')">+1</button>
+      <button class="general" onclick="func('r')">Reset</button>
+    </div>
+    <div class="count">
+      <p class="text" id="text">0</p>
+    </div>
+    <div class="setIntText">Set Interval</div>
+    <div class="int">
+      <button class="intSet" onclick="int('+')">+</button>
+      <p class="intText" id="set">1</p>
+      <button class="intSet" onclick="int('-')">-</button>
+    </div>
+    <footer>All Rights Reserved</footer>
+  </body>
+</html>
